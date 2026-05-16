@@ -46,10 +46,6 @@ public class Uplata {
         return datumIzvrsenja;
     }
 
-    public void setDatumIzvrsenja(LocalDate datumIzvrsenja) {
-        this.datumIzvrsenja = datumIzvrsenja;
-    }
-
     public String getNapomena() {
         return napomena;
     }

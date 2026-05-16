@@ -86,10 +86,6 @@ public class Rezervacija {
         return datumRezervacije;
     }
 
-    public void setDatumRezervacije(LocalDateTime datumRezervacije) {
-        this.datumRezervacije = datumRezervacije;
-    }
-
     public Apartman getApartman() {
         return apartman;
     }

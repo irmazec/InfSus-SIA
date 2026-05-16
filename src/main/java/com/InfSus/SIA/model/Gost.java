@@ -79,7 +79,4 @@ public class Gost {
         return datumRodenja;
     }
 
-    public void setDatumRodenja(LocalDate datumRodenja) {
-        this.datumRodenja = datumRodenja;
-    }
 }
