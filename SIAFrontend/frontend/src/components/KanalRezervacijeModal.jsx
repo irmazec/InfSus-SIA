@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 
 function KanalRezervacijeModal({ kanalRezervacije, onSave, onClose }) {
   const [form, setForm] = useState({
-    kanalRezervacije: '',
+    naziv: '',
   })
-  const [kanaliRezervacije, setKanaliRezervacije] = useState([])
+  const [kanaliRezervacije, setKanaliRezervacije] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null);
 
@@ -20,7 +20,7 @@ function KanalRezervacijeModal({ kanalRezervacije, onSave, onClose }) {
   useEffect(() => {
     if (kanalRezervacije) {
       setForm({
-        naziv: kanalRezervacije.naziv
+        naziv: kanalRezervacije.naziv ?? ''
       })
     }
   }, [kanalRezervacije])
