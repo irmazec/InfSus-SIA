@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import RezervacijaModal from '../components/RezervacijaModal'
 import SearchBar from '../components/SearchBar'
+import '../App.css'
 
 function RezervacijePage() {
     const [rezervacije, setRezervacije] = useState([])
@@ -80,8 +81,10 @@ function RezervacijePage() {
     return (
     <div>
         <h2>Rezervacije</h2>
-        <SearchBar value={search} onChange={setSearch} placeholder="Pretraži po nazivu rezervacije..."/>
-        <button onClick={handleAdd}>+ Nova rezervacija</button>
+            <div className="reservationTab">
+                <SearchBar value={search} onChange={setSearch} placeholder="Pretraži po nazivu apartmana..."/>
+                <button onClick={handleAdd}>Dodaj rezervaciju</button>
+            </div>
 
         <table>
             <thead>
@@ -110,8 +113,8 @@ function RezervacijePage() {
                       <td>{r.statusRezervacije.naziv}</td>
                       <td>
                           <button onClick={() => navigate(`/rezervacije/${r.idRezervacija}`)}>Detalji</button>
-                          <button onClick={() => handleEdit(r)}>Uredi</button>
-                          <button onClick={() => handleDelete(r.idRezervacija)}>Obriši</button>
+                          <button className="edit" onClick={() => handleEdit(r)}>Uredi</button>
+                          <button className="delete" onClick={() => handleDelete(r.idRezervacija)}>Obriši</button>
                       </td>
                   </tr>
                 ))}

@@ -68,14 +68,16 @@ function KanaliRezervacijePage() {
     return (
     <div>
         <h2>Kanali rezervacje</h2>
-        <SearchBar value={search} onChange={setSearch} placeholder="Pretraži po nazivu kanala rezervacije..."/>
-        <button onClick={handleAdd}>+ Novi kanal rezervacije</button>
-
+        <div className="reservationTab">
+            <SearchBar value={search} onChange={setSearch} placeholder="Pretraži po nazivu kanala rezervacije..."/>
+            <button onClick={handleAdd}>Novi kanal rezervacije</button>
+        </div>
         <table>
             <thead>
                 <tr>
                     <th>Šifra kanala rezervacije</th>
                     <th>Naziv</th>
+                    <th>Akcije</th>
                 </tr>
             </thead>
             <tbody>
@@ -84,8 +86,8 @@ function KanaliRezervacijePage() {
                       <td>{r.sifraKanala}</td>
                       <td>{r.naziv}</td>
                       <td>
-                        <button onClick={() => handleEdit(r)}>Uredi</button>
-                        <button onClick={() => handleDelete(r.sifraKanala)}>Obriši</button>
+                        <button className="edit" onClick={() => handleEdit(r)}>Uredi</button>
+                        <button className="delete" onClick={() => handleDelete(r.sifraKanala)}>Obriši</button>
                       </td>
                     </tr>
                   ))}
