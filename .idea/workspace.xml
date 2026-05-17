@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06cdb3f3-7624-46fe-8168-405f55ab2b51" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/controller/UplataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/controller/UplataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Gost.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Gost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Uplata.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Uplata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/repository/UplataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/repository/UplataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/service/UplataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/service/UplataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/HomePage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/UplataModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/UplataModal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/KanaliRezervacijePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/KanaliRezervacijePage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijeDetailPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijeDetailPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijePage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -53,24 +53,19 @@ function RezervacijaDetailPage() {
       statusUplate: { sifraStatusaUplate: formData.sifraStatusaUplate },
       rezervacija: { idRezervacija: parseInt(id) }
     }
-    try{
-        if (selectedUplata) {
-          await fetch(`http://localhost:8080/api/uplata/${selectedUplata.idUplata}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          })
-        } else {
-          await fetch('http://localhost:8080/api/uplata', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-          })
-        }
-    }catch(err){
-        setError('Greška pri spremanju uplate.')
+    if (selectedUplata) {
+      await fetch(`http://localhost:8080/api/uplata/${selectedUplata.idUplata}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+    } else {
+      await fetch('http://localhost:8080/api/uplata', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
     }
-
     await fetchUplate()
     setModalOpen(false)
   }

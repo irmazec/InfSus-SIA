@@ -39,7 +39,8 @@ public class UplataController {
             this.uplataService.addNewPayment(uplata);
             return ResponseEntity.status(HttpStatus.CREATED).build();
         }catch(RuntimeException e){
-            throw new RuntimeException("Iznos manji od 0!");
+            System.out.println("Iznos manji od 0!");
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
     }
 

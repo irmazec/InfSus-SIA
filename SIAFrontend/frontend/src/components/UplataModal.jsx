@@ -9,6 +9,7 @@ function UplataModal({ uplata, onSave, onClose }) {
   })
   const [statusi, setStatusi] = useState([])
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:8080/api/status-uplate')
@@ -36,8 +37,12 @@ function UplataModal({ uplata, onSave, onClose }) {
 
   const handleSubmit = () => {
     if (!form.iznos || !form.sifraStatusaUplate) {
-      alert('Iznos i status su obavezni.')
+      setError('Iznos i status su obavezni.')
       return
+    }
+    if (form.iznos < 0){
+        setError('Iznos manji od 0!')
+        return
     }
     onSave(form)
   }
@@ -52,7 +57,7 @@ function UplataModal({ uplata, onSave, onClose }) {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal" onClick={e => e.stopPropagation()}>
         <h3>{uplata ? 'Uredi uplatu' : 'Nova uplata'}</h3>
-
+        {error && <p style={{ color: 'red' }}>{error}</p>}
         <label>Iznos (€)</label>
         <input name="iznos" type="number" value={form.iznos} onChange={handleChange} />
 
