@@ -6,16 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="06cdb3f3-7624-46fe-8168-405f55ab2b51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/GostModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/GostModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/KanalRezervacijeModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/KanalRezervacijeModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/RezervacijaModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/RezervacijaModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/SearchBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/SearchBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/UplataModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/components/UplataModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/KanaliRezervacijePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/KanaliRezervacijePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijeDetailPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijeDetailPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/RezervacijePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +33,134 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.KanaliRezervacijeControllerTest.executor": "Run",
+    "JUnit.KanaliRezervacijeControllerTest.shoudReturnAllKanaliRezervacije.executor": "Run",
+    "JUnit.KanaliRezervacijeControllerTest.shouldReturnKanalRezervacijeById.executor": "Run",
+    "JUnit.KanaliRezervacijeRepositoryTest.shouldDeleteKanalRezervacije.executor": "Run",
+    "JUnit.KanaliRezervacijeRepositoryTest.shouldReturnaAllKanaliRezervacije.executor": "Run",
+    "JUnit.KanaliRezervacijeRepositoryTest.shouldSaveAndFindKanalRezervacije.executor": "Run",
+    "JUnit.KanaliRezervacijeServiceTest.shouldBeNull.executor": "Run",
+    "JUnit.KanaliRezervacijeServiceTest.shouldReturnAllRezervacije.executor": "Run",
+    "JUnit.KanaliRezervacijeServiceTest.shouldReturnKanalRezervacijeById.executor": "Run",
+    "JUnit.KanaliRezervacijeServiceTest.shouldSaveNewRezervacija.executor": "Run",
+    "JUnit.KanaliRezervacijeServiceTest.shouldUpdateExistingRezervacija.executor": "Run",
+    "JUnit.RezervacijaControllerTest.executor": "Run",
+    "JUnit.RezervacijaControllerTest.shoudReturnAllRezervacije.executor": "Run",
+    "JUnit.RezervacijaControllerTest.shouldAddNewRezervacija.executor": "Run",
+    "JUnit.RezervacijaControllerTest.shouldReturnRezervacijaById.executor": "Run",
+    "JUnit.RezervacijaControllerTest.shouldUpdateRezervacija.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.shoudReturnAllRezervacije.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.shouldAddNewRezervacija.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.shouldDeleteRezervacija.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.shouldReturnRezervacijaById.executor": "Run",
+    "JUnit.RezervacijaIntegrationTest.shouldUpdateRezervacija.executor": "Run",
+    "JUnit.RezervacijaRepositoryTest.deleteRezervacija.executor": "Run",
+    "JUnit.RezervacijaRepositoryTest.executor": "Run",
+    "JUnit.RezervacijaRepositoryTest.shouldReturnAllRezervacija.executor": "Run",
+    "JUnit.RezervacijaRepositoryTest.shouldSaveAndFindRezervacija.executor": "Run",
+    "JUnit.RezervacijaServiceTest.executor": "Run",
+    "JUnit.RezervacijaServiceTest.shouldReturnNull.executor": "Run",
+    "JUnit.RezervacijaServiceTest.shouldReturnRezervacijaById.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager" selected="JUnit.KanalRezervacijeIntegrationTest">
+    <configuration name="KanalRezervacijeIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.KanalRezervacijeIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RezervacijaIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RezervacijaIntegrationTest.shouldDeleteRezervacija" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
+      <option name="METHOD_NAME" value="shouldDeleteRezervacija" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RezervacijaIntegrationTest.shouldReturnRezervacijaById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
+      <option name="METHOD_NAME" value="shouldReturnRezervacijaById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RezervacijaIntegrationTest.shouldUpdateRezervacija" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
+      <option name="METHOD_NAME" value="shouldUpdateRezervacija" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KanalRezervacijeIntegrationTest" />
+        <item itemvalue="JUnit.RezervacijaIntegrationTest" />
+        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldDeleteRezervacija" />
+        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldUpdateRezervacija" />
+        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldReturnRezervacijaById" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="06cdb3f3-7624-46fe-8168-405f55ab2b51" name="Changes" comment="" />
