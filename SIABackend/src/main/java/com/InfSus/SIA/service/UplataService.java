@@ -26,6 +26,10 @@ public class UplataService {
         return uplataRepository.findAll();
     }
 
+    public List<Uplata> getAllPaymentsByReservation(Integer rezervacijaId){
+        return uplataRepository.findByRezervacija_IdRezervacija(rezervacijaId);
+    }
+
     public void addNewPayment(Uplata uplata) {
         if (PriceValidation.validatePrice(uplata.getIznos())){
             uplataRepository.save(uplata);

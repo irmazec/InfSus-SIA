@@ -28,10 +28,19 @@ public class UplataController {
         return ResponseEntity.ok(this.uplataService.getAllPayments());
     }
 
+    @GetMapping("/rezervacija/{rezervacijaId}")
+    public ResponseEntity<List<Uplata>> getAllPaymentsForReservation(@PathVariable Integer rezervacijaId){
+        return ResponseEntity.ok(this.uplataService.getAllPaymentsByReservation(rezervacijaId));
+    }
+
     @PostMapping
     ResponseEntity<HttpStatus> addNewPayment(@RequestBody Uplata uplata) {
-        this.uplataService.addNewPayment(uplata);
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        try{
+            this.uplataService.addNewPayment(uplata);
+            return ResponseEntity.status(HttpStatus.CREATED).build();
+        }catch(RuntimeException e){
+            throw new RuntimeException("Iznos manji od 0!");
+        }
     }
 
     @PutMapping("/{uplataId}")
