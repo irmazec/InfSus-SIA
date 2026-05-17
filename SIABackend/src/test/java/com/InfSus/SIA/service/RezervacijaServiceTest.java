@@ -31,8 +31,8 @@ public class RezervacijaServiceTest {
     @BeforeEach
     void setUp() {
         rezervacija = new Rezervacija();
-        rezervacija.setDatumOd(LocalDate.of(2025, 6, 1));
-        rezervacija.setDatumDo(LocalDate.of(2025, 6, 9));
+        rezervacija.setDatumOd(LocalDate.of(2026, 6, 1));
+        rezervacija.setDatumDo(LocalDate.of(2026, 6, 9));
         rezervacija.setUkupnaCijena(BigDecimal.valueOf(890));
         rezervacija.setBrojOsoba(3);
     }

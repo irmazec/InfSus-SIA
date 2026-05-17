@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06cdb3f3-7624-46fe-8168-405f55ab2b51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/src/test/java/com/InfSus/SIA/service/RezervacijaServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/test/java/com/InfSus/SIA/service/RezervacijaServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.KanalRezervacijeIntegrationTest.executor": "Run",
     "JUnit.KanaliRezervacijeControllerTest.executor": "Run",
     "JUnit.KanaliRezervacijeControllerTest.shoudReturnAllKanaliRezervacije.executor": "Run",
     "JUnit.KanaliRezervacijeControllerTest.shouldReturnKanalRezervacijeById.executor": "Run",
@@ -64,6 +64,14 @@
     "JUnit.RezervacijaServiceTest.executor": "Run",
     "JUnit.RezervacijaServiceTest.shouldReturnNull.executor": "Run",
     "JUnit.RezervacijaServiceTest.shouldReturnRezervacijaById.executor": "Run",
+    "JUnit.UplataControllerTest.shouldReturnUplataById.executor": "Run",
+    "JUnit.UplataRepositoryTest.executor": "Run",
+    "JUnit.UplataRepositoryTest.shouldReturnAllRezervacija.executor": "Run",
+    "JUnit.UplataServiceTest.executor": "Run",
+    "JUnit.UplataServiceTest.shouldDeleteUplata.executor": "Run",
+    "JUnit.UplataServiceTest.shouldReturnNull.executor": "Run",
+    "JUnit.UplataServiceTest.shouldReturnUplataById.executor": "Run",
+    "JUnit.UplataServiceTest.shouldUpdateExistingUplata.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -72,80 +80,80 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.KanalRezervacijeIntegrationTest">
-    <configuration name="KanalRezervacijeIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UplataControllerTest">
+    <configuration name="UplataControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SIA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="PATTERN" value="com.InfSus.SIA.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.KanalRezervacijeIntegrationTest" />
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.controller.UplataControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RezervacijaIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UplataControllerTest.shouldReturnUplataById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SIA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="PATTERN" value="com.InfSus.SIA.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.controller.UplataControllerTest" />
+      <option name="METHOD_NAME" value="shouldReturnUplataById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UplataServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SIA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.InfSus.SIA.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.service" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.service.UplataServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RezervacijaIntegrationTest.shouldDeleteRezervacija" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UplataServiceTest.shouldDeleteUplata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SIA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="PATTERN" value="com.InfSus.SIA.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
-      <option name="METHOD_NAME" value="shouldDeleteRezervacija" />
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.service" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.service.UplataServiceTest" />
+      <option name="METHOD_NAME" value="shouldDeleteUplata" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RezervacijaIntegrationTest.shouldReturnRezervacijaById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UplataServiceTest.shouldUpdateExistingUplata" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SIA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
+          <option name="PATTERN" value="com.InfSus.SIA.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
-      <option name="METHOD_NAME" value="shouldReturnRezervacijaById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RezervacijaIntegrationTest.shouldUpdateRezervacija" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SIA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.InfSus.SIA.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.InfSus.SIA.integration" />
-      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.integration.RezervacijaIntegrationTest" />
-      <option name="METHOD_NAME" value="shouldUpdateRezervacija" />
+      <option name="PACKAGE_NAME" value="com.InfSus.SIA.service" />
+      <option name="MAIN_CLASS_NAME" value="com.InfSus.SIA.service.UplataServiceTest" />
+      <option name="METHOD_NAME" value="shouldUpdateExistingUplata" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -153,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KanalRezervacijeIntegrationTest" />
-        <item itemvalue="JUnit.RezervacijaIntegrationTest" />
-        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldDeleteRezervacija" />
-        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldUpdateRezervacija" />
-        <item itemvalue="JUnit.RezervacijaIntegrationTest.shouldReturnRezervacijaById" />
+        <item itemvalue="JUnit.UplataControllerTest" />
+        <item itemvalue="JUnit.UplataControllerTest.shouldReturnUplataById" />
+        <item itemvalue="JUnit.UplataServiceTest" />
+        <item itemvalue="JUnit.UplataServiceTest.shouldDeleteUplata" />
+        <item itemvalue="JUnit.UplataServiceTest.shouldUpdateExistingUplata" />
       </list>
     </recent_temporary>
   </component>
