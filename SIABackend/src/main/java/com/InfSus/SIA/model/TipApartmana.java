@@ -1,6 +1,6 @@
 package com.InfSus.SIA.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "TIP_APARTMANA")

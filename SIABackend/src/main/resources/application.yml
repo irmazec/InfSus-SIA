@@ -1,9 +1,15 @@
+camunda:
+  bpm:
+    auto-deployment-enabled: true
+    metrics:
+      enabled: false
+      db-reporter-activate: false
+    default-history-time-to-live: 30
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/SIA
     username: postgres
     password: postgres
-
   jpa:
     hibernate:
       ddl-auto: validate
