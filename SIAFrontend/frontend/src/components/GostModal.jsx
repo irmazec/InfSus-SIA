@@ -43,7 +43,7 @@ function GostModal({ onSave, onClose }) {
             setSaving(false)
         }
     }
-
+    var minDate = "1900-01-01"
     return (
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal" onClick={e => e.stopPropagation()}>
@@ -67,7 +67,7 @@ function GostModal({ onSave, onClose }) {
                 <input name="drzavljanstvo" value={form.drzavljanstvo} onChange={handleChange} />
 
                 <label>Datum rođenja</label>
-                <input name="datumRodenja" type="date" value={form.datumRodenja} onChange={handleChange} />
+                <input name="datumRodenja" type="date" min = {minDate} value={form.datumRodenja} onChange={handleChange} />
 
                 <div className="modal-actions">
                     <button onClick={onClose} disabled={saving}>Odustani</button>

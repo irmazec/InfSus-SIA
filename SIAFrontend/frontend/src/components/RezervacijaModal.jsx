@@ -77,7 +77,7 @@ function RezervacijaModal({ rezervacija, onSave, onClose }) {
             <div className="modal"><p>Učitavanje...</p></div>
         </div>
     )
-
+    var today = new Date().toISOString().split('T')[0];
     return (
         <>
         <div className="modal-overlay" onClick={onClose}>
@@ -85,16 +85,16 @@ function RezervacijaModal({ rezervacija, onSave, onClose }) {
                 <h3>{rezervacija ? 'Uredi rezervaciju' : 'Nova rezervacija'}</h3>
 
                 <label>Datum od</label>
-                <input name="datumOd" type="date" value={form.datumOd} onChange={handleChange} />
+                <input name="datumOd" type="date" min= {today} value={form.datumOd} onChange={handleChange} />
 
                 <label>Datum do</label>
-                <input name="datumDo" type="date" value={form.datumDo} onChange={handleChange} />
+                <input name="datumDo" type="date" min =  {today} value={form.datumDo} onChange={handleChange} />
 
                 <label>Ukupna cijena (€)</label>
-                <input name="ukupnaCijena" type="number" value={form.ukupnaCijena} onChange={handleChange} />
+                <input name="ukupnaCijena" type="number" min = "0" value={form.ukupnaCijena} onChange={handleChange} />
 
                 <label>Broj osoba</label>
-                <input name="brojOsoba" type="number" value={form.brojOsoba} onChange={handleChange} />
+                <input name="brojOsoba" type="number" min = "0" value={form.brojOsoba} onChange={handleChange} />
 
                 <label>Apartman</label>
                 <select name="idApartman" value={form.idApartman} onChange={handleChange}>
