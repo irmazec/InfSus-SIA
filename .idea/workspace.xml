@@ -6,18 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="06cdb3f3-7624-46fe-8168-405f55ab2b51" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Apartman.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Apartman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Gost.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Gost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Iznajmljivac.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Iznajmljivac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/KanalRezervacije.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/KanalRezervacije.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Rezervacija.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/StatusRezervacije.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/StatusRezervacije.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/StatusUplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/StatusUplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/TipApartmana.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/TipApartmana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Uplata.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/model/Uplata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/controller/CamundaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/controller/CamundaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/service/CamundaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/java/com/InfSus/SIA/service/CamundaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIABackend/src/main/resources/UplataBPMNDiagram.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/SIABackend/src/main/resources/UplataBPMNDiagram.bpmn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/UplataProcesPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/SIAFrontend/frontend/src/pages/UplataProcesPage.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

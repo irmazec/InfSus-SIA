@@ -3,7 +3,7 @@ import {BrowserRouter} from 'react-router';
 import RezervacijePage from './pages/RezervacijePage';
 import KanaliRezervacijePage from './pages/KanaliRezervacijePage';
 import RezervacijeDetailPage from './pages/RezervacijeDetailPage';
-import UplataProcessPage from './pages/UplataProcessPage';
+import UplataProcesPage from './pages/UplataProcesPage';
 import NavBar from './components/NavBar'
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
                 <Route path="/rezervacije" element={<RezervacijePage />} />
                 <Route path="/rezervacije/:id" element={<RezervacijeDetailPage />} />
                 <Route path="/kanali-rezervacije" element={<KanaliRezervacijePage />} />
-                <Route path="/uplata-proces" element={<UplataProcessPage />} />
+                <Route path="/uplata-proces" element={<UplataProcesPage />} />
             </Routes>
         </BrowserRouter>
     );

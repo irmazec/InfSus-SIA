@@ -55,7 +55,7 @@
     <bpmn:sequenceFlow id="Flow_1e7f93r" sourceRef="user_task_evidencija" targetRef="Gateway_1lwmq3o" />
     <bpmn:sequenceFlow id="Flow_1rhqiuu" sourceRef="change_status_to_payed" targetRef="EndEvent_1" />
     <bpmn:sequenceFlow id="Flow_0domj33" name="Da" sourceRef="Gateway_1kichh2" targetRef="change_status_to_payed">
-      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${nijePlaceno == true}</bpmn:conditionExpression>
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${uplataStigla == true}</bpmn:conditionExpression>
     </bpmn:sequenceFlow>
     <bpmn:sequenceFlow id="Flow_1bki7qn" name="Da" sourceRef="Gateway_1lwmq3o" targetRef="Gateway_1kichh2">
       <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">${podaciIspravni == true}</bpmn:conditionExpression>

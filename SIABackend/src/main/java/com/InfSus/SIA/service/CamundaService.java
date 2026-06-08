@@ -50,17 +50,26 @@ public class CamundaService {
         data.put("iznos", iznos);
         data.put("podaciIspravni", podaciIspravni);
         data.put("uplataOtplacena", uplataOtplacena);
+        data.put("stiglaUplata", false);
 
         if (iznos <= 0) {
             throw new RuntimeException("Iznos mora biti veći od 0!");
         }
 
-        taskService.complete(taskId, data);
+        if(podaciIspravni){
+            taskService.complete(taskId, data);
+        }
+
     }
 
     public void correctData(String taskId, Map<String, Object> data){
-        if (data.containsKey("iznos")){
-            if (Double.parseDouble(data.get("iznos").toString()) <= 0.0){
+        if (data.containsKey("iznos")) {
+            if (Double.parseDouble(data.get("iznos").toString()) <= 0.0) {
+                throw new RuntimeException("Iznos mora biti veći od 0!");
+            }
+        }
+        if (data.containsKey("iznos")) {
+            if (Double.parseDouble(data.get("iznos").toString()) <= 0.0) {
                 throw new RuntimeException("Iznos mora biti veći od 0!");
             }
         }
@@ -83,7 +92,7 @@ public class CamundaService {
     }
 
     public void payReservationFully(String processInstanceId) {
-        runtimeService.setVariable(processInstanceId, "uplataOtplacena", true);
+        runtimeService.setVariable(processInstanceId, "uplataStigla", true);
         runtimeService.createSignalEvent("uplata-primljena")
                 .executionId(
                         runtimeService.createExecutionQuery()

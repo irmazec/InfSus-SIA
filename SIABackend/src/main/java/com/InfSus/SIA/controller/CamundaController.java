@@ -62,13 +62,7 @@ public class CamundaController {
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/zadaci/{zadatakId}/placeno")
-    public ResponseEntity<Void> placenaRezervacija(@PathVariable String zadatakId) {
-        camundaService.changeStatusToPayed(zadatakId);
-        return ResponseEntity.ok().build();
-    }
-
-    @PostMapping("zadaci/{processInstanceId}/plati")
+    @PostMapping("/{processInstanceId}/uplati")
     public ResponseEntity<Void> platiRezervaciju(@PathVariable String processInstanceId){
         camundaService.payReservationFully(processInstanceId);
         return ResponseEntity.ok().build();

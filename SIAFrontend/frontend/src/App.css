@@ -33,6 +33,27 @@
     bottom-margin: 1rem;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.col{
+     justify-content: space-between;
+}
+
+.card {
+  background: #195473;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  height: 100%;
+  justify-items: center;
+  justify-content: space-between;
+}
+
 button{
     background-color:  #195473;
     margin-right: 0.4rem;
